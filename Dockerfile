@@ -8,3 +8,5 @@ RUN /bin/tar -C /opt/ xf /tmp/jre.tar.gz
 
 WORKDIR /opt/jre
 RUN makepkg -si --asroot --noconfirm --needed
+
+RUN rm -rf /tmp/jre.tar.gz /opt/jre
